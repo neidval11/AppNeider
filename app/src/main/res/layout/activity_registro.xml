@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        tools:context=".activities.RegistroActivity">
+
+        <EditText
+            android:id="@+id/idnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Ingrese su nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Ingrese su correo"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/eddireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Ingrese direccion"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idtelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese telefono"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idfcumple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese fecha de cumpleaños"
+            android:inputType="text"
+            android:clickable="true"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/idPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/benviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:onClick="clickenviar"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
